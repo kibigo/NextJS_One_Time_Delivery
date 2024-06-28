@@ -45,18 +45,18 @@ const Pricing: React.FC = () => {
 
 
 
-    const handleSelectChange = (event:React.ChangeEvent<HTMLSelectElement>) => {
+    const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const locationName = event.target.value;
         setSelectedLocation(locationName);
 
 
         //find corresponding routes
         const selectedLocationData = locations.find(location => location.name === locationName);
-        // console.log('This is what is ' ,selectedLocationData);
-        //console.log('This are the locations',selectedLocationData?.routes);
+;
         if(selectedLocationData){
             
-            const routeArray = selectedLocationData?.routes;
+            //const routeArray = selectedLocationData?.routes;
+            const routeArray = Object.values(selectedLocationData.routes).flat();
             
             setSelectedRoutes(routeArray);
         }else{
