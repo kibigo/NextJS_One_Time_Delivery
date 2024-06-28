@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
@@ -57,7 +59,7 @@ const Pricing: React.FC = () => {
             
             //const routeArray = selectedLocationData?.routes;
             const routeArray = Object.values(selectedLocationData.routes).flat();
-            
+
             setSelectedRoutes(routeArray);
         }else{
             setSelectedRoutes([]);
