@@ -48,6 +48,11 @@ const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu}) => {
                     <li className='navbar_link'>
                         <a href='#work' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('work')}}>How we work</a>
                     </li>
+
+                    <li className='navbar_link'>
+                        <a href='#pricing' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('work')}}>Pricing</a>
+                    </li>
+
                     <li className='navbar_link'>
                         <a href='#faq' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('faq')}}>FAQ</a>
                     </li>

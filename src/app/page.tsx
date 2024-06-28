@@ -5,6 +5,7 @@ import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 import Talk from "@/components/Talk";
 import Why_Us from "@/components/Why_Us";
 import Work from "@/components/Work";
@@ -61,12 +62,16 @@ export default function Home() {
         <Work />
       </div>
 
-      <div id="faq">
-        <FaqSection />
+      <div id="pricing">
+        <Pricing />
       </div>
 
       <div id="talk">
         <Talk />
+      </div>
+
+      <div id="faq">
+        <FaqSection />
       </div>
 
       <div id="contact">

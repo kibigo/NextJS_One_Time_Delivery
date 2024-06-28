@@ -28,7 +28,7 @@ const FaqSection = () => {
 
 
   return (
-    <section className='relative bg-blue-100 mx-auto'>
+    <section className='relative bg-blue-200 mx-auto'>
 
         <div className='container flex flex-col md:flex-row md:items-center p-10 mx-auto'>
 
@@ -46,7 +46,7 @@ const FaqSection = () => {
                             <button className='bg-white mt-5 py-2 w-full rounded-md'>
                                 {faq.question}
                                 
-                                {openIndex === index && <p className='font-thin text-start'>{faq.answer}</p>}
+                                {openIndex === index && <p className='font-thin text-start bg-white'>{faq.answer}</p>}
                             </button>
                             {openIndex === index ? (<FiMinusCircle onClick={()=>toggleAnswer(index)} className='text-3xl absolute right-0 md:right-0 top-6 cursor-pointer'/>) : (<IoAddCircle onClick={() => toggleAnswer(index)} className='text-3xl absolute right-0 md:right-0 top-6 cursor-pointer'/>)}
                             
