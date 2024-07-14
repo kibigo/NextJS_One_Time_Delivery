@@ -14,9 +14,9 @@ const Footer = () => {
         }
     }
   return (
-    <section className='relative bg-blue-100 mx-auto py-6'>
+    <section className='relative bg-backgroundBlue mx-auto py-6'>
 
-            <div className='container grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mx-auto p-2 gap-5 md:gap-0'>
+            <div className='container grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mx-auto p-1 gap-5 md:gap-0'>
 
                 <div>
                     <span className='block font-bold text-2xl'>One time</span>

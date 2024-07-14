@@ -68,7 +68,7 @@ const Pricing: React.FC = () => {
     
 
   return (
-    <section className='relative mx-auto bg-blue-100'>
+    <section className='relative mx-auto bg-backgroundBlue'>
 
         <div className='container p-10 mx-auto items-center text-center'>
 
