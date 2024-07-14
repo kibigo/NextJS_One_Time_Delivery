@@ -22,7 +22,7 @@ const Work = () => {
                     </div>
 
                     <div className='mt-5'>
-                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/telephone.jpg'/>
+                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/telephone_.jpg'/>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ const Work = () => {
                     </div>
 
                     <div className='relative inline-block mt-5'>
-                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/mobilePhone.jpg'/>
+                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/mobilePhone_.jpg'/>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@ const Work = () => {
                     </div>
 
                     <div className='relative inline-block mt-5'>
-                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/money.jpg'/>
+                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/money_.jpg'/>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ const Work = () => {
                     </div>
 
                     <div className='relative inline-block mt-5'>
-                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/motorbike.jpg'/>
+                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/motorbike_.jpg'/>
                     </div>
                 </div>
 
@@ -82,7 +82,7 @@ const Work = () => {
                     </div>
 
                     <div className='relative inline-block mt-5'>
-                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/order.jpg'/>
+                        <img className='h-32 w-32 md:h-28 lg:w-28 md:w-28 rounded-full' src='/order_.jpg'/>
                     </div>
                 </div>
             </div>

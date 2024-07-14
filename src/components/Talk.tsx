@@ -17,9 +17,9 @@ const Talk = () => {
             </div>
 
             <div className='text-center mt-8'>
-                <button className='bg-black text-white px-10 py-2 rounded-md'>
+                <a className='bg-black text-white px-10 py-4 rounded-md' href='tel:+254 712456797'>
                     Talk to us
-                </button>
+                </a>
             </div>
         </div>
         
