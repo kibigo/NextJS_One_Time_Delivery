@@ -1,10 +1,9 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import locationData from '../../locationData';
 
 interface Route{
-    id:number;
     name:string;
     price:number;
 }
@@ -14,9 +13,8 @@ interface Routes{
 }
 
 interface Location{
-    id:number;
     name:string;
-    routes:Routes;
+    routes:Route[];
 
 }
 
@@ -32,18 +30,9 @@ const Pricing: React.FC = () => {
     const [locations, setLocations] = useState<Location[]>([]);
 
     useEffect(() => {
-        axios.get('https://api.jsonsilo.com/public/33f21f1a-3f0d-4339-adfc-13ee5091840c')
-        .then((response) => {
-            const locationsData: Location[] = response.data.locations;
-            const routesData = locationsData.map((location: Location) => (location.name));
-            
-            setRoute(routesData);
-            setLocations(locationsData);
-
-            console.log('This are routes', locationsData)
-            
-        })
-        .catch((error) => console.log('Error fetching data', error));
+        const routesData = locationData.map((location) => location.name);
+        setRoute(routesData);
+        setLocations(locationData);
     }, []);
 
 
@@ -57,11 +46,7 @@ const Pricing: React.FC = () => {
         const selectedLocationData = locations.find(location => location.name === locationName);
 ;
         if(selectedLocationData){
-            
-            //const routeArray = selectedLocationData?.routes;
-            const routeArray = Object.values(selectedLocationData.routes).flat();
-
-            setSelectedRoutes(routeArray);
+            setSelectedRoutes(selectedLocationData.routes);
         }else{
             setSelectedRoutes([]);
         }

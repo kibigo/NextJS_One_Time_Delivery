@@ -8,7 +8,7 @@ const HomeSection = () => {
 
     <div className='container flex flex-col md:flex-row items-center p-10 mx-auto gap-2'>
         
-        <div className='bg-white rounded-md flex-1 md:w-1/2 mt-10 md:mx-auto'>
+        <div className='bg-white rounded-md flex-1 md:w-1/2 mt-10 md:mx-auto p-5'>
             <div className='mb-5'>
                 <div className='mt-10'>
                     <span className='block text-4xl'>Your Gateway to</span> 

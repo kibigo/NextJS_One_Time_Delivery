@@ -1,5 +1,15 @@
-{
-  "locations": [
+export interface Route{
+  name:string;
+  price:number;
+}
+
+export interface Location{
+  id:number;
+  name:string;
+  routes:Route[];
+}
+
+const locationData: Location[] = [
     {
       "id": 1,
       "name": "Nairobi",
@@ -13,7 +23,6 @@
           "price": 200
         },
         {
-          "id": 3,
           "name": "Kilimani/Milimani rd",
           "price": 250
         },
@@ -647,5 +656,6 @@
         }
       ]
     }
-  ]
-}
+]
+
+export default locationData;

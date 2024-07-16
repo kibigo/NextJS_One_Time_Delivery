@@ -20,7 +20,11 @@ export default function Home() {
   const [showscroll, setShowscroll] = useState(false)
 
   const toggleMenu = () => {
-    setIsMenuVisible(!isMenuVisible);
+    setIsMenuVisible(true);
+  }
+
+  const hideMenu = () => {
+    setIsMenuVisible(false);
   }
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export default function Home() {
 
   return (
     <main>
-      <Navbar isMenuVisible={isMenuVisible} toggleMenu={toggleMenu}/>
+      <Navbar isMenuVisible={isMenuVisible} toggleMenu={toggleMenu} hideMenu = {hideMenu}/>
       
       <div id="home">
         <HomeSection />

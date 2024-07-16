@@ -8,9 +8,10 @@ import { IoIosSearch } from 'react-icons/io'
 interface NavbarProps{
     isMenuVisible:boolean;
     toggleMenu: () =>void;
+    hideMenu: ()=>void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu}) => {
+const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu, hideMenu}) => {
 
     const scrollToElement = (id:string) => {
         const element = document.getElementById(id)
@@ -31,45 +32,43 @@ const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu}) => {
                 </a>
             </div>
 
-            {/* absolute top-16 md:top-0 w-full bg-white md:bg-transparent z-10 */}
 
-            <div className={`${isMenuVisible ? 'block' : 'hidden'} z-10 md:z-0 md:block mt-40 md:mt-0 bg-white rounded-md`}>
+            <div className={`${isMenuVisible ? 'translate-x-0' : 'translate-x-full md:translate-x-0'} fixed top-0 md:-top-2 left-0 w-full h-full transition-transform bg-white duration-300 md:block md:relative md:w-auto md:h-auto md:bg-white md:mt-0 md:rounded-md z-10`}>
 
-                <ul className='flex flex-col p-4 md:flex-row text-center md:items-start gap-3 md:gap-3 lg:gap-7 cursor-pointer mt-3'>
+                <ul className='flex flex-col p-4 md:flex-row text-center md:items-start gap-10 md:gap-4 lg:gap-7 cursor-pointer lg:mt-3 mt-44'>
                     <li className='navbar_link'>
-                        <a href='#home' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('home')}}>Home</a>
-                    </li>
-                    <li className='navbar_link'>
-                        <a href='#why' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('why')}}>Why us</a>
-                    </li>
-                    <li className='navbar_link'>
-                        <a href='#about' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('about')}}>About</a>
-                    </li>
-                    <li className='navbar_link'>
-                        <a href='#work' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('work')}}>How we work</a>
+                        <a href='#home' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('home')}}>Home</a>
                     </li>
 
                     <li className='navbar_link'>
-                        <a href='#pricing' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('work')}}>Pricing</a>
+                        <a href='#why' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('why')}}>Why us</a>
                     </li>
 
                     <li className='navbar_link'>
-                        <a href='#faq' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('faq')}}>FAQ</a>
+                        <a href='#about' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('about')}}>About</a>
                     </li>
+
                     <li className='navbar_link'>
-                        <a href='#contact' onClick={(e) => {e.preventDefault(); toggleMenu(); scrollToElement('contact')}}>Contact</a>
+                        <a href='#work' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('work')}}>How we work</a>
+                    </li>
+
+                    <li className='navbar_link'>
+                        <a href='#pricing' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('pricing')}}>Pricing</a>
+                    </li>
+
+                    <li className='navbar_link'>
+                        <a href='#faq' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('faq')}}>FAQ</a>
+                    </li>
+
+                    <li className='navbar_link'>
+                        <a href='#contact' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('contact')}}>Contact</a>
                     </li>
                 </ul>
             </div>
             
-            {/* <div className='hidden md:flex items-center rounded-md ml-5'>
-                <input placeholder='search' className='outline-none w-1/2'/>
-                <IoIosSearch className='text-3xl'/>
-            </div> */}
 
-            <div className='absolute right-20'>
-                <FaBars onClick={toggleMenu} className='cursor-pointer md:hidden text-2xl'/>
-
+            <div className='absolute top-5 right-5 z-20'>
+                {isMenuVisible ? <FaX onClick={hideMenu} className='cursor-pointer md:hidden text-2xl fixed right-10 top-10' /> : <FaBars onClick={toggleMenu} className='cursor-pointer md:hidden text-2xl'/>}
             </div>
         </nav>
     </header>
@@ -77,3 +76,13 @@ const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu}) => {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+//className={`${isMenuVisible ? 'block fixed top-0 left-0 w-full h-full bg-blue-300 translate-x-0' : 'hidden'} z-10 md:z-0 md:block md:mt-0 bg-white rounded-md`}
