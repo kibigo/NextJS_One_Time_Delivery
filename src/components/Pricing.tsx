@@ -32,15 +32,16 @@ const Pricing: React.FC = () => {
     const [locations, setLocations] = useState<Location[]>([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/locations')
+        axios.get('https://api.jsonsilo.com/public/33f21f1a-3f0d-4339-adfc-13ee5091840c')
         .then((response) => {
-            const locationsData: Location[] = response.data;
+            const locationsData: Location[] = response.data.locations;
             const routesData = locationsData.map((location: Location) => (location.name));
-            //const routesList: string[] = ([] as string[]) .concat(...routesData);
+            
             setRoute(routesData);
             setLocations(locationsData);
 
-            // console.log('This are routes', locationsData)
+            console.log('This are routes', locationsData)
+            
         })
         .catch((error) => console.log('Error fetching data', error));
     }, []);
