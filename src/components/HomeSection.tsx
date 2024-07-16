@@ -25,7 +25,7 @@ const HomeSection = () => {
             <div className='flex flex-row items-center'>
 
                 <div className='mt-10 mb-10 flex flex-row gap-10'>
-                    <a className='call_color w-24 rounded-sm' href='tel:+254 712456797'>Call Us Now</a>
+                    <a className='call_color w-24 rounded-sm text-center' href='tel:+254 712456797'>Call Us Now</a>
                     <button className='w-40 border border-sky-200 rounded-sm flex items-center justify-center gap-3'><FaPlay/> How we work</button>
                 </div>
             </div>
