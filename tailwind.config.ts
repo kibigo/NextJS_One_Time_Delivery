@@ -15,7 +15,8 @@ const config: Config = {
       },
 
       colors: {
-        'backgroundBlue' : '#D7E8F4'
+        'backgroundBlue' : '#D7E8F4',
+        'page' : '#8CCCF4'
       },
     },
   },
