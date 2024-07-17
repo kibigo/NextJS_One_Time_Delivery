@@ -35,7 +35,8 @@ const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu, hideMenu}) =>
 
             <div className={`${isMenuVisible ? 'translate-x-0' : 'translate-x-full md:translate-x-0'} fixed top-0 md:-mt-3 left-0 w-full h-full transition-transform bg-page duration-300 md:block md:relative md:w-auto md:h-auto md:bg-white md:rounded-md z-10`}>
 
-                <ul className='flex flex-col p-4 md:flex-row text-center md:items-start gap-10 md:gap-4 lg:gap-7 cursor-pointer lg:mt-3 md:mt-1 mt-44 text-2xl md:text-base'>
+                <ul className='flex flex-col p-4 md:flex-row text-center md:items-start gap-10 md:gap-4 lg:gap-7 cursor-pointer lg:mt-3 md:mt-1 mt-20 text-2xl md:text-base'>
+
                     <li className='navbar_link'>
                         <a href='#home' onClick={(e) => {e.preventDefault(); hideMenu(); scrollToElement('home')}}>Home</a>
                     </li>
@@ -79,10 +80,3 @@ export default Navbar
 
 
 
-
-
-
-
-
-
-//className={`${isMenuVisible ? 'block fixed top-0 left-0 w-full h-full bg-blue-300 translate-x-0' : 'hidden'} z-10 md:z-0 md:block md:mt-0 bg-white rounded-md`}

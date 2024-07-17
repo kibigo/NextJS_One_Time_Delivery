@@ -1,6 +1,8 @@
 "use client"
 
 import React from 'react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { BiChevronDown } from 'react-icons/bi';
 import { useState } from 'react';
 import { IoAddCircle } from 'react-icons/io5';
 import { FiMinusCircle } from 'react-icons/fi';
@@ -12,48 +14,73 @@ interface Faq {
 
 const FaqSection = () => {
 
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-    const toggleAnswer = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    }
-
-
-    const faqs = [
-        { question: 'What is One Time Deliveries?', answer: 'One Time Deliveries is a service that provides hassle-free shopping and delivery experiences.' },
-        { question: 'How does it work?', answer: 'Simply sign up, place your order, and our team will deliver your items to your doorstep.' },
-        { question: 'What areas do you cover?', answer: 'We cover most urban areas. Please check our service map for detailed coverage.' },
-        { question: 'How can I contact support?', answer: 'You can contact support via our website contact form or email us at support@onetimedelivery.com.' },
-    ];
-
 
   return (
     <section className='relative bg-blue-200 mx-auto'>
 
-        <div className='container flex flex-col md:flex-row md:items-center p-10 mx-auto'>
+        <div className='container flex flex-col gap-5 md:flex-row md:items-center p-10 mx-auto'>
 
             <div className='md:w-1/2'>
                 <h1 className='text-3xl'>FAQS</h1>
 
-                <span className='block text-gray-500'>some of these answers</span>
-                <span className='block text-gray-500'>Some of the enquiries people ask, lets try to answer</span>
+                <div className='mt-3'>
+                    <span className='block text-gray-500'>Some of the enquiries people ask, lets try to answer</span>
+                </div>
             </div>
+            
+            <div className="w-full max-w-lg divide-y divide-gray-200 rounded-xl bg-white/5">
 
-            <div className='md:w-1/2 flex flex-col'>
-                {faqs.map((faq, index) => (
-                    <div key={index} className='relative'>
-                        <div>
-                            <button className='bg-white mt-5 py-2 w-full rounded-md'>
-                                {faq.question}
-                                
-                                {openIndex === index && <p className='font-thin text-start bg-white'>{faq.answer}</p>}
-                            </button>
-                            {openIndex === index ? (<FiMinusCircle onClick={()=>toggleAnswer(index)} className='text-3xl absolute right-0 md:right-0 top-6 cursor-pointer'/>) : (<IoAddCircle onClick={() => toggleAnswer(index)} className='text-3xl absolute right-0 md:right-0 top-6 cursor-pointer'/>)}
-                            
-                        </div>
-                    </div>
-                    
-                ))}
+                <Disclosure as="div" className="p-4 bg-white" defaultOpen={false}>
+                    <DisclosureButton className="group flex w-full items-center justify-between">
+                        <span className="text-sm/6 font-medium group-data-[hover]:text-gray-600">
+                        What is One Time Deliveries?
+                        </span>
+                        <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
+                    </DisclosureButton>
+
+                    <DisclosurePanel className="mt-2 text-sm/5">
+                        One Time Deliveries is a service that provides hassle-free shopping and delivery experiences.
+                    </DisclosurePanel>
+                </Disclosure>
+
+                <Disclosure as="div" className="p-4 bg-white" defaultOpen={false}>
+                    <DisclosureButton className="group flex w-full items-center justify-between">
+                        <span className="text-sm/6 font-medium group-data-[hover]:text-gray-600">
+                        How does it work?
+                        </span>
+                        <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
+                    </DisclosureButton>
+
+                    <DisclosurePanel className="mt-2 text-sm/5">
+                        Simply sign up, place your order, and our team will deliver your items to your doorstep.
+                    </DisclosurePanel>
+                </Disclosure>
+
+                <Disclosure as="div" className="p-4 bg-white" defaultOpen={false}>
+                    <DisclosureButton className="group flex w-full items-center justify-between">
+                        <span className="text-sm/6 font-medium group-data-[hover]:text-gray-600">
+                        What areas do you cover?
+                        </span>
+                        <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
+                    </DisclosureButton>
+
+                    <DisclosurePanel className="mt-2 text-sm/5">
+                        We cover most urban areas. Please check our service map for detailed coverage.
+                    </DisclosurePanel>
+                </Disclosure>
+
+                <Disclosure as="div" className="p-4 bg-white" defaultOpen={false}>
+                    <DisclosureButton className="group flex w-full items-center justify-between">
+                        <span className="text-sm/6 font-medium group-data-[hover]:text-gray-600">
+                        How can I contact support?
+                        </span>
+                        <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
+                    </DisclosureButton>
+
+                    <DisclosurePanel className="mt-2 text-sm/5">
+                        You can contact support via our website contact form or email us at support@onetimedelivery.com.
+                    </DisclosurePanel>
+                </Disclosure>
             </div>
         </div>
     </section>

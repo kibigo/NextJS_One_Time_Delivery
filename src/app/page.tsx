@@ -1,5 +1,6 @@
 "use client"
 
+import { Nunito_Sans } from "next/font/google";
 import About from "@/components/About";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
@@ -12,6 +13,12 @@ import Work from "@/components/Work";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
+
+const nunito_san = Nunito_Sans({
+  subsets: ['latin'],
+  weight:['400']
+});
+
 
 export default function Home() {
 
@@ -46,8 +53,9 @@ export default function Home() {
   };
 
 
+
   return (
-    <main>
+    <main className={nunito_san.className}>
       <Navbar isMenuVisible={isMenuVisible} toggleMenu={toggleMenu} hideMenu = {hideMenu}/>
       
       <div id="home">
