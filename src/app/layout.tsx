@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "One Time Delivery",
-  description: "Your Home For All Deliveries Across The Country"
-};
+
+// export const metadata: Metadata = {
+//   title: "One Time Delivery",
+//   description: "Your Home For All Deliveries Across The Country",
+// };
 
 export default function RootLayout({
   children,
@@ -20,7 +18,11 @@ export default function RootLayout({
   return (
     <>
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <title>One Time Delivery</title>
+        <link rel="icon" href="/favicon.ico"></link>
+      </head>
+      <body>
         {children}
       </body>
     </html>

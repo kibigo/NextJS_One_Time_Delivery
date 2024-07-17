@@ -14,12 +14,12 @@ const About = () => {
                     as the go-to solution for all your delivery needs. We are commited to Excellence offering Fast and Reliable 
                     Service that is Flexible and Adaptability. We do this using Cutting-Edge Technology a Dedicated Team Whether 
                     you're a business looking for reliable logistics solutions or an individual in need of convenient delivery 
-                    services, you can trust [Delivery Company Name] to deliver, quite literally.
+                    services, you can trust One Time Delivery to deliver, quite literally.
                 </p>
             </div>
 
 
-            <div className='h-80 w-80 relative mr-10 mt-10'>
+            <div className='h-80 w-80 relative mt-10'>
                 <img className='absolute inset-0 w-full h-full object-cover clip-path-irregular border-r-4' src='https://img.freepik.com/free-photo/full-shot-man-riding-bike-outdoors_23-2150880380.jpg?t=st=1718545333~exp=1718548933~hmac=14db247973fc8047f1c1faf5cd98ae0faed9012a20d43366b3c34d3294fadc38&w=740'/>
             </div>
         </div>

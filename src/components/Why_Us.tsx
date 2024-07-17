@@ -9,7 +9,7 @@ const Why_Us = () => {
 
             <div className='mt-2 text-center'>
                 <h1 className='text-3xl font-thin'>Why us?</h1>
-                <p className='text-gray-500 mt-2'>what makes us stand out from the rest</p>
+                <p className='text-gray-500 mt-2'>What makes us stand out from the rest</p>
             </div>
 
             <div className='mt-8'>
