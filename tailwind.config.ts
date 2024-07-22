@@ -16,7 +16,10 @@ const config: Config = {
 
       colors: {
         'backgroundBlue' : '#D7E8F4',
-        'page' : '#8CCCF4'
+        'page' : '#8CCCF4',
+        'outline' : "#AFD2E9",
+        'paragraph': "#645F70",
+        'headingColor': "#0B0714"
       },
     },
   },
