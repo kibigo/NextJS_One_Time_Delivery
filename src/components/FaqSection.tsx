@@ -38,7 +38,7 @@ const FaqSection = () => {
                         <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
                     </DisclosureButton>
 
-                    <DisclosurePanel className="mt-2 text-sm/5">
+                    <DisclosurePanel className="mt-2 text-sm/5 text-gray-500">
                         One Time Deliveries is a service that provides hassle-free shopping and delivery experiences.
                     </DisclosurePanel>
                 </Disclosure>
@@ -51,7 +51,7 @@ const FaqSection = () => {
                         <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
                     </DisclosureButton>
 
-                    <DisclosurePanel className="mt-2 text-sm/5">
+                    <DisclosurePanel className="mt-2 text-sm/5 text-gray-500">
                         Simply sign up, place your order, and our team will deliver your items to your doorstep.
                     </DisclosurePanel>
                 </Disclosure>
@@ -64,7 +64,7 @@ const FaqSection = () => {
                         <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
                     </DisclosureButton>
 
-                    <DisclosurePanel className="mt-2 text-sm/5">
+                    <DisclosurePanel className="mt-2 text-sm/5 text-gray-500">
                         We cover most urban areas. Please check our service map for detailed coverage.
                     </DisclosurePanel>
                 </Disclosure>
@@ -77,7 +77,7 @@ const FaqSection = () => {
                         <BiChevronDown className="size-5 group-data-[hover]:fill-gray-600 group-data-[open]:rotate-180" />
                     </DisclosureButton>
 
-                    <DisclosurePanel className="mt-2 text-sm/5">
+                    <DisclosurePanel className="mt-2 text-sm/5 text-gray-500">
                         You can contact support via our website contact form or email us at support@onetimedelivery.com.
                     </DisclosurePanel>
                 </Disclosure>

@@ -22,11 +22,11 @@ const HomeSection = () => {
                 </p>
             </div>
 
-            <div className='mt-10 mb-10 flex flex-row gap-10'>
+            <div className='mt-10 mb-10 flex flex-row gap-8'>
                 <a href='tel:+254 712456797'>
-                    <button className='call_color w-48 h-12 md:w-32 lg:w-48 rounded-md text-center justify-center' >Call Us Now</button>
+                    <button className='call_color w-32 h-12 md:w-32 lg:w-48 rounded-md text-center justify-center' >Call Us Now</button>
                 </a>
-                <button className='w-48 h-12 md:w-36 lg:w-48 border border-outline rounded-sm flex items-center justify-center gap-3'><FaPlay/> How we work</button>
+                <button className='w-32 h-12 md:w-36 lg:w-48 border border-outline rounded-sm flex items-center justify-center md:gap-3'><FaPlay/> How we work</button>
             </div>
 
         </div>
