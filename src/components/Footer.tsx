@@ -72,7 +72,7 @@ const Footer = () => {
 
                     <ul className='flex flex-row gap-8 cursor-pointer mt-4'>
                         <li>
-                            <a>
+                            <a href='https://wa.me/+254 712774824' target='_blank' rel='noopener noreferrer'>
                                 <IoLogoWhatsapp className='text-green-500 text-2xl'/>
                             </a>
                         </li>
