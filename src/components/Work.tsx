@@ -20,7 +20,7 @@ const Work = () => {
                     <div>
                         <h1 className='font-bold'>01</h1>
                     </div>
-                    <h2 className='font-bold'>Reach out</h2>
+                    <h2 className='font-bold'>Reach Out</h2>
                     <p className='text-gray-600 block'>Talk to us on what</p>
                     <p className='text-gray-600 block'>you want delivered</p>
                 </div>
@@ -37,7 +37,7 @@ const Work = () => {
                     <div>
                         <h1 className='font-bold'>02</h1>
                     </div>
-                    <h2 className='font-bold'>Order details</h2>
+                    <h2 className='font-bold'>Order Details</h2>
                     <p className='text-gray-600 block'>Select where you want</p>
                     <p className='text-gray-600 block'>your goods delivered</p>
                 </div>
@@ -53,7 +53,7 @@ const Work = () => {
                     <div>
                         <h1 className='font-bold'>03</h1>
                     </div>
-                    <h2 className='font-bold'>Receive quotation</h2>
+                    <h2 className='font-bold'>Receive Quotation</h2>
                     <p className='text-gray-600 block'>Receive quotation and</p>
                     <p className='text-gray-600 block'>estimated delivery time</p>
                 </div>
@@ -74,7 +74,7 @@ const Work = () => {
                     <div>
                         <h1 className='font-bold'>04</h1>
                     </div>
-                    <h2 className='font-bold'>Order transit</h2>
+                    <h2 className='font-bold'>Order Transit</h2>
                     <p className='text-gray-600 block'>Goods shipped within </p>
                     <p className='text-gray-600 block'>the agreed time</p>
                 </div>
