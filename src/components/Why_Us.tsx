@@ -8,53 +8,56 @@ const Why_Us = () => {
         <div className='container bg-white items-center p-10 mx-auto'>
 
             <div className='mt-2 text-center'>
-                <h1 className='text-3xl font-thin'>Why us?</h1>
-                <p className='text-gray-500 mt-2'>What makes us stand out from the rest</p>
+                <h1 className='text-3xl font-thin'>Our Services</h1>
+                <p className='text-gray-500 mt-2'>What we offer</p>
             </div>
 
             <div className='mt-8'>
                 <ul className='flex flex-col md:flex-row gap-5'>
-                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-1/4'>
-                        <MdBorderColor className='mt-5 ml-3'/>
-                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Speedy Deliveries:</h3>
-                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px'}}>
-                            Our advanced logistics network and real-time tracking 
-                            systems allow us to deliver your packages swiftly and 
-                            reliably. We optimize routes and schedules to minimize 
-                            delivery times, ensuring your items reach their destination 
-                            as quickly as possible.
+                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-auto md:h-auto'>
+                        <MdBorderColor className='mt-5 ml-2'/>
+                        <h3 className='mt-3 ml-2 text-headingColor font-semibold' style={{fontSize:'16px'}}>Same-Day Deliveries:</h3>
+                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px', lineHeight:'25px'}}>
+                            We ensure that your packages are delivered within the same day they are 
+                            picked up. It's ideal for urgent deliveries where speed is crucial. 
+                            Whether it's a business document, a gift, or any essential item. Same-day 
+                            delivery guarantees that your package reaches its destination within hours, 
+                            providing quick and efficient service.
                         </p>
                     </li>
 
-                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-1/4'>
+                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-auto md:h-auto'>
                         <MdBorderColor className='mt-5 ml-3'/>
-                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Accurate Tracking:</h3>
-                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px'}}>
-                            With our state-of-the-art tracking technology, you 
-                            can monitor your package every step of the way. 
-                            From dispatch to delivery, you’ll receive real-time updates, 
-                            so you always know where your shipment is.
+                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Inter-Estate Deliveries:</h3>
+                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px', lineHeight:'25px'}}>
+                            Inter-Estate Deliveries cater to the transportation of packages between different 
+                            residential estates in and around Nairobi. This service is perfect for residents 
+                            who need to send or receive items from neighboring estates. It provides reliable 
+                            and efficient delivery solutions, making it easy to connect with friends, family, 
+                            or business contacts across various estates.
                         </p>
                     </li>
 
-                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-1/4'>
+                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-auto md:h-auto'>
                         <MdBorderColor className='mt-5 ml-3'/>
-                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Reliability:</h3>
-                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px'}}>
-                            We understand the importance of dependable delivery services. 
-                            Our dedicated team works tirelessly to ensure that every 
-                            package arrives safely and on time. We handle each delivery 
-                            with care, providing consistent and reliable service you can trust.
+                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Corporate Deliveries:</h3>
+                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px', lineHeight:'25px'}}>
+                            Tailored for businesses, Corporate Deliveries offer specialized solutions to 
+                            ensure that corporate packages are delivered on time and in perfect condition. 
+                            It includes transportation of documents, office supplies, 
+                            or any business-related items. It's designed to meet the unique needs of businesses, 
+                            providing professional and reliable delivery services.
                         </p>
                     </li>
 
-                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-1/4'>
+                    <li className='bg-blue-100 rounded-md lg:w-1/4 md:w-auto md:h-auto'>
                         <MdBorderColor className='mt-5 ml-3'/>
-                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Flexible Solutions:</h3>
-                        <p className='text-paragraph mt-3 block ml-3' style={{fontSize:'14px'}}>
-                            We offer a variety of delivery options to meet your specific needs. 
-                            Whether it’s same-day delivery, next-day service, or scheduled deliveries, 
-                            we have the flexibility to accommodate your requirements and exceed your expectations.
+                        <h3 className='mt-3 ml-3 text-headingColor font-semibold' style={{fontSize:'16px'}}>Personal Deliveries:</h3>
+                        <p className='text-paragraph mt-3 lg:mt-3 md:mt-8 block ml-3' style={{fontSize:'14px', lineHeight:'25px'}}>
+                            Personal Deliveries are designed to handle the transport of individual items with 
+                            care and attention. Whether it's sending gifts to loved ones, delivering important 
+                            documents, or transporting any personal belongings. It provides peace of mind, knowing that your 
+                            personal deliveries will be treated with respect and arrive safely at their destination.
                         </p>
                     </li>
                 </ul>
@@ -62,6 +65,7 @@ const Why_Us = () => {
             </div>
 
         </div>
+        
     </section>
   )
 }

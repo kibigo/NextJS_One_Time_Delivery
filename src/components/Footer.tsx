@@ -16,11 +16,11 @@ const Footer = () => {
   return (
     <section className='relative bg-backgroundBlue mx-auto py-6'>
 
-            <div className='container grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mx-auto p-1 gap-5 md:gap-0'>
+            <div className='container grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mx-auto p-3 gap-5 md:gap-0'>
 
                 <div>
-                    <span className='block font-bold text-2xl'>One time</span>
-                    <span className='block font-bold text-2xl'>deliveries</span>
+                    <span className='block font-bold text-2xl'>OneTime</span>
+                    <span className='block font-bold text-2xl'>Delivery</span>
 
                 </div>
 

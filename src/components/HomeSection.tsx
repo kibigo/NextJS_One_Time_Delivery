@@ -12,13 +12,13 @@ const HomeSection = () => {
         <div className='rounded-md flex-1 md:w-1/2 mt-10 md:mx-auto p-5'>
             <div className='mb-5'>
                 <div className='mt-10'>
-                    <span className='block text-4xl leading-10' style={{fontSize:48}}>Your Gateway to Convenience!</span> 
+                    <span className='block text-4xl' style={{fontSize:48, lineHeight:'45px'}}>Swift, Reliable Deliveries Across Nairobi CBD and Beyond</span> 
                 </div>
             </div>
 
             <div>
                 <p className='block text-paragraph' style={{fontSize:20}}>
-                    Discover the joy of hassle-free shopping and delivery with Onetime deliveries call us today and experice convenience like never before
+                    Discover the joy of hassle-free delivery with OneTime Delivery. Call us today and experience convenience like never before.
                 </p>
             </div>
 
@@ -33,7 +33,7 @@ const HomeSection = () => {
         
         {/* rider photo */}
         <div className='flex-1 mt-12 md:items-center md:w-1/2 flex justify-center relative'>
-            <img className='md:max-w-x' src='/OBJECTS.png'/>
+            <img className='md:max-w-x' src='/bike-remove.png'/>
         </div>
 
     </div>

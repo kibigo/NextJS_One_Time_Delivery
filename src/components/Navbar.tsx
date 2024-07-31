@@ -27,8 +27,8 @@ const Navbar: React.FC<NavbarProps> = ({isMenuVisible, toggleMenu, hideMenu}) =>
         <nav className='container relative h-10 flex items-center md:justify-between p-10 mx-auto lg:gap-64'>
 
             <div className='bg-slate-50'>
-                <a href='#' className='text-2xl font-bold'>
-                    Onetime Del.
+                <a href='/' className='text-2xl font-bold'>
+                    <img src='/favicon.ico' className='h-16'/>
                 </a>
             </div>
 

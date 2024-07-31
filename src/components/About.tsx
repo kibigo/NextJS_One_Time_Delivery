@@ -8,13 +8,12 @@ const About = () => {
 
             <div className='md:w-1/2'>
                 <h1 className='font-bold text-3xl'>About us</h1>
-                <p className='mt-4'>
-                    At onetime delivery, we're not just a delivery service; we're your reliable partner in convenience 
-                    and efficiency. With a passion for seamless logistics and customer satisfaction, we've built a reputation 
-                    as the go-to solution for all your delivery needs. We are commited to Excellence offering Fast and Reliable 
-                    Service that is Flexible and Adaptability. We do this using Cutting-Edge Technology a Dedicated Team Whether 
-                    you're a business looking for reliable logistics solutions or an individual in need of convenient delivery 
-                    services, you can trust One Time Delivery to deliver, quite literally.
+                <p className='mt-4' style={{lineHeight:'32px'}}>
+                    At OneTime Delivery, we are committed to providing fast, 
+                    reliable, and secure delivery services within Nairobi's CBD 
+                    and its neighboring estates. As a locally owned and operated business, 
+                    we understand the unique needs of our community and strive to exceed 
+                    our customers' expectations with every delivery.
                 </p>
             </div>
 
